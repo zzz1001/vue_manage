@@ -78,12 +78,10 @@ export default {
       const { data: res } = await this.$http.get('menus')
       if (res.meta.status !== 200) return this.$message.error(res.meta.msg)
       this.menulist = res.data
-      console.log(res)
     },
     // 侧边栏的折叠与展开
     toggleCollapse () {
       this.isCollapse = !this.isCollapse
-      console.log(this.isCollapse)
     },
     // 保存连接的激活状态
     saveNavState (activePath) {
