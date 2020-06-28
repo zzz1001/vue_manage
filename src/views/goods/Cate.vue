@@ -222,12 +222,12 @@ export default {
           if (this.previousElementSibling) this.previousElementSibling.click()
         }
       })
-    }, 1000)
+    }, 0)
   }
 }
 </script>
 
-<style>
+<style scoped>
 .treeTable{
   margin-top: 15px;
 }
